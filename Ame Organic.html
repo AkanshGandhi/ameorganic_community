@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ame Organic Mental Health Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #9e7756; /* Color from logo */
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+        .description {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        .description h2 {
+            color: #9e7756; /* Color from logo */
+        }
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .main-content, .sidebar {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .form-container textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #9e7756; /* Color from logo */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #7e5f44;
+        }
+        .posts-container {
+            margin-top: 20px;
+        }
+        .post {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .post h3 {
+            margin: 0;
+            color: #9e7756; /* Color from logo */
+        }
+        .post p {
+            margin: 10px 0 0;
+        }
+        .one-among-you h3 {
+            margin: 0 0 10px;
+            color: #9e7756; /* Color from logo */
+        }
+        .post-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .post-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #9e7756; /* Color from logo */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Ame.jpeg" alt="Ame Organic Logo">
+        <h1>Ame Organic Mental Health Community</h1>
+        <p>Share your stories and support each other anonymously.</p>
+    </header>
+    <div class="description">
+        <h2>About Ame Organic</h2>
+        <p>Ame Organic is committed to enhancing your well-being through natural and effective neuro cosmetics. Our products are designed to nurture both your body and mind, promoting holistic health.</p>
+        <h2>Our Motive</h2>
+        <p>We believe in the power of community and the strength that comes from knowing you are not alone. This platform is our way of showing that someone cares, offering a safe space for you to share your mental health journey and support others.</p>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="form-container">
+                <h2>Share Your Story</h2>
+                <form id="postForm">
+                    <label for="story">Your Story:</label>
+                    <textarea id="story" required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+            <div class="posts-container" id="postsContainer">
+                <!-- User posts will appear here -->
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="one-among-you">
+                <h3>One Among You</h3>
+                <div class="post-container">
+                    <img src="images/Gemini_Generated_Image_o3yy21o3yy21o3yy.jpeg" alt="Hope" class="post-photo">
+                    <div class="post">
+                        <h3>Hope</h3>
+                        <p>After years of battling depression, I found solace in sharing my experiences with others. Connecting with people who understood my struggles made a huge difference.</p>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <img src="images/Gemini_Generated_Image_o3yy22o3yy22o3yy.jpeg" alt="Bravery" class="post-photo">
+                    <div class="post">
+                        <h3>Bravery</h3>
+                        <p>Opening up about my anxiety was one of the hardest things I've ever done, but it also brought me the most support and understanding from those around me.</p>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <img src="images/Gemini_Generated_Image_o3yy23o3yy23o3yy.jpeg" alt="Resilience" class="post-photo">
+                    <div class="post">
+                        <h3>Resilience</h3>
+                        <p>Despite the ups and downs, I learned that every small step towards mental wellness is a victory. Celebrating these small wins has kept me going.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/ame.organic/" target="_blank">Instagram</a> |
+        <a href="https://www.linkedin.com/company/ame-organic" target="_blank">LinkedIn</a>
+    </div>
+
+    <script>
+        document.getElementById('postForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const story = document.getElementById('story').value;
+            if (story) {
+                const postContainer = document.createElement('div');
+                postContainer.classList.add('post-container');
+                const emotions = ["Joy", "Bliss", "Cheer", "Delight", "Glee", "Jubilation", "Euphoria", "Contentment", "Happiness"];
+                const randomEmotion = emotions[Math.floor(Math.random() * emotions.length)];
+                postContainer.innerHTML = `<img src="images/blank_photo.jpg" alt="${randomEmotion}" class="post-photo"><div class="post"><h3>${randomEmotion}</h3><p>${story}</p></div>`;
+                document.getElementById('postsContainer').prepend(postContainer);
+                document.getElementById('postForm').reset();
+            }
+        });
+    </script>
+</body>
+</html>
